@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'AutumnFlowers'; /* Define the font-family name */
+    src: url('fonts/AutumnFlowers-9YVZK.otf') format('opentype'); /* Path to your font file */
+    font-weight: normal; /* Font weight (e.g., normal, bold, etc.) */
+    font-style: normal; /* Font style (e.g., normal, italic, etc.) */
+  }
+  body{
+    background-image:url(./images/painting.jpg) ;
+  }
+  
+  .custom-font {
+    font-family: 'AutumnFlowers', sans-serif; /* Apply the custom font to the element */
+    color:#720000;
+    position: absolute  ;
+    top: 50px;
+    right:590px;
+    font-size: 70px;
+    animation: fadeIn 5s ease forwards; 
+  }
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.butterfly-video {
+  position: absolute;
+  height: 200px;
+    width: 170px;
+    float: right;
+  top: 50px;
+  right:120px;
+  object-fit:cover; /* Ensure the video covers the entire container */
+  border-radius: 50%;
+  z-index: 0; /* Ensure the video appears behind the image */
+  opacity:0.3; 
+}
+img{
+    height: 200px;
+    width: 170px;
+    float: right;
+    border-radius: 2000px;
+        position: absolute; /* Position the image absolutely */
+        top: 50px; /* Align the image to the top */
+        right: 120px; /* Align the image to the right */
+       
+    }
+    .photo-container{
+      height: 200px;
+    width: 170px;
+    float: right;
+    
+        position: absolute; /* Position the image absolutely */
+        top: 50px; /* Align the image to the top */
+        right: 120px;
+    }
+   
+   
+ /* CSS for buttons */
+ @font-face {
+  font-family: 'Scripto-2OR2v'; /* Define the font-family name */
+  src: url('./fonts/Scripto-2OR2v.ttf') format('truetype'); /* Path to your font file */
+  font-weight: normal; /* Font weight (e.g., normal, bold, etc.) */
+  font-style: normal; /* Font style (e.g., normal, italic, etc.) */
+}
+
+.buttons {
+  position: absolute;
+  top: 290px;
+  right: 590px;
+  display: flex; /* Add this line */
+  flex-direction: column;
+  font-family: 'Scripto-2OR2v', sans-serif;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 50px;
+  background-color: #2e642e;
+  color: rgb(20, 39, 11);
+  text-decoration: none;
+  font-family: 'Scripto-2OR2v', sans-serif;
+  font-size: 30px;
+  border-radius: 180px;
+  margin: 20px;
+  background-image: url(./images/btn.png);
+  background-size:cover;
+  transition: background-color 0.3s ease;
+   border: 6px solid #002800; /* Cherry red border */
+  box-shadow: 0px 0px 10px rgba(243, 75, 103, 0.5); 
+}
+
+.button:hover {
+  background-color: #ff8bb2; /* Change color on hover */
+}
+ 
+  
+    /*position: absolute;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+  
+    top: 20px;
+    left: 450px;
+    border-radius: 100%;
